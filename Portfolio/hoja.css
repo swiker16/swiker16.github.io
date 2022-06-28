@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  
+}
+  
+#imagen_fondo{
+    background-image: url("fondos/fondoPrincipal.png") ;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#imagen_fondo-habilidades{
+    background-image: url("fondos/fondoHabilidades.svg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#formacion{
+    display: none;
+}
+
+#formacionTitulo{
+    border: 2px solid #fff;
+    padding: 7px;
+    border-radius: 25px;
+}
+
+#experienciaTitulo{
+    border: 2px solid #fff;
+    padding: 7px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: black;
+}
+
+li {
+    margin: 20px;
+}
+
+#listaUl {
+    user-select: none;
+    cursor: pointer;
+}
