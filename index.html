@@ -1,164 +1,268 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Iker Francos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="hoja.css">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="hoja.js"></script>
-    <link rel="icon" href="iconos/iconoPrincipal.png">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio - Iker Francos</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/iconoPrincipal.png" rel="icon">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-    <nav class="navbar bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="iconos/iconoPrincipal.png" alt="" width="50" height="44">
-          </a>
-        </div>
-    </nav>
-    <div class="container-fluid" id="imagen_fondo">
-        <div class="row">
-            <div class="col-12 my-5 justify-content-center">
-                <h1 class="text-center">Soy Iker Francos</h1>
-                <h3 class="text-center">Desarrollo de Software</h3>
-                <div class="d-flex justify-content-center">
-                    <a  class="btn btn-primary" href="IkerFrancosBarreales.pdf" target="_blank"  download="IkerFrancosBarreales.pdf">Visualizar CV</a>
-                </div>
-            </div>
-        </div>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Iker Francos</h1>
+      <p>I'm <span class="typed" data-typed-items="Developer Software, Web Developer"></span></p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/iker-francos-216409196/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
+  </section><!-- End Hero -->
 
+  <main id="main">
 
-    <div class="container-fluid">
-        <div class="row bg-dark">
-            <div class="col-12 col-lg-6  ">
-                <img src="FotoCarnet.JPG" class="rounded mx-auto d-block w-50 h-70 rounded-circle my-5">
-            </div>
-            <div class="col-12 col-lg-6 my-5">
-                <h3 style="color: #fff;">Sobre mí.</h3>
-                <p style="color: #fff;">Profesional y responsable en busca de un puesto en el desarrollo de software. Mi objetivo es obtener experiencia en el mundo de desarrollo de software y aprender más sobre el desarrollo de software y nuevas tecnologías. Tengo amplias habilidades de trabajar en equipo, poseo una capacidad de aprendizaje veloz. 
-                </p>
-                <ul class="nav nav-tabs" id="listaUl">
-                    <li class="nav-item" style="color: #fff;" onclick="mostrarFormacion()" id="formacionTitulo"><h5>Formación Académica</h5></li>
-                    <li class="nav-item px-4" onclick="mostrarExperiencia()" id="experienciaTitulo"><h5>Experiencia Laboral</h5></li>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p class="my-4">I consider myself a proactive person, I really like to learn new technologies and work in a team, 
+            flexibility when it comes to constant environmental changes, responsibility, 
+            self-taught and commitment to the team, willing to face new challenges with the aim of continuing to grow.</p>
+
+            <p class="my-4">My training focusses more on software development more specifically on the web, 
+              but I am also passionate about the world of mobile and desktop application development,
+               that's why I like to have training in everything.</p>
+            
+            <p class="my-4">The goal I want to achieve is to have experience in the world of development and create a large base of the knowledge acquired.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/perfil.jpg" class="img-fluid px-5" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Developer Software &amp; Web Developer.</h3>
+            <div class="row my-5">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>26 December 2002</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Leganés, Madrid, Spain</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+34 633 74 82 07</span></li>
                 </ul>
-                <div class="my-5" id="formacion">
-                    <h3 style="color: #fff;">Formación Académica</h3>
-                    <p style="color: #fff;">Grado Medio de Sistemas Microinformáticos y Redes (Colegio Santa María de los apostoles 2019-2021)</p>
-                    <p style="color: #fff;">Grado Superior de Desarrollo de Aplicaciones Multiplataforma (Colegio Santa María de los apostoles 2021-*)</p>
-                </div>
-
-                <div class="my-5" id="experiencia">
-                    <h3 style="color: #fff;">Experiencia laboral</h3>
-                    <p style="color: #fff;">Técnico informático de software y hardware (07/04/2021 - 10/06/2021, Ibis Computer.)</p>
-                    <p style="color: #fff;">Mozo de almacén (18/11/2021 – 05/12/2021, El corte ingles.)</p>
-                    <p style="color: #fff;">Técnico de soporte informático (28/12/2021 – 28/02/2022, Zaidan. S.L)</p>
-                    <p style="color: #fff;">Técnico de soporte informático (24/03/2021 – *, SerMicro. S.L)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid" id="imagen_fondo-habilidades">
-
-        <div class="row">
-            <div class="col-12 text-center my-3">
-                <h1>Habilidades</h1> </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card ms-5 my-3" style="width: 18rem;">
-                    <img src="imagenes/htmlimagen.png" class="card-img-top rounded mx-auto d-block" alt="..." style="height: 186px; width: 160px; ">
-                    <div class="card-body">
-                        <div class="progress" style="height: 5px;">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h5 class="card-title">HTML 5</h5>
-                        <p class="card-text">HTML5 (HyperText Markup Language). HTML es un lenguaje que nos sirve para definir la estructura como el contenido de nuestra pagina web.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card ms-5 my-3" style="width: 18rem;">
-                    <img src="imagenes/cssimagen.png" class="card-img-top rounded mx-auto d-block" alt="..." style="height: 186px; width: 140px;">
-                    <div class="card-body">
-                        <div class="progress" style="height: 5px;">
-                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h5 class="card-title">CSS 3</h5>
-                        <p class="card-text">CSS 3 (Cascading Style Sheets). CSS es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card ms-5 my-3" style="width: 18rem;">
-                    <img src="imagenes/Javaimagen.png" class="card-img-top rounded mx-auto d-block" alt="..." style="height: 186px; width: 100px;">
-
-                    <div class="card-body">
-                        <div class="progress" style="height: 5px;">
-                            <div class="progress-bar bg-secundary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h5 class="card-title">Java</h5>
-                        <p class="card-text">Java es una tecnología que se usa para el desarrollo de aplicaciones que convierten a la Web en un elemento más interesante y útil.</p>
-                    </div>
-                </div>
-            </div>
-           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card ms-5 my-3" style="width: 18rem;">
-                <img src="imagenes/javascriptimagen.png" class="card-img-top rounded mx-auto d-block" alt="..." style="height: 186px; width: 300px;">
-                <div class="card-body">
-                    <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">JavaScript es un lenguaje de programación orientado a objetos, este lenguaje va a compañado de HTML y CSS hace que la web sea más dinamica.</p>
-                </div>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ikerfrancos008@gmail.com</span></li>
+                </ul>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card ms-5 my-3" style="width: 18rem;">
-                    <img src="imagenes/imagenxml.png" class="card-img-top rounded mx-auto d-block" alt="..." style="height: 186px; width: 160px;">
-                    <div class="card-body">
-                        <div class="progress" style="height: 5px;">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h5 class="card-title">XML</h5>
-                        <p class="card-text">XML (Extensible Markup Language), es un lenguaje de marcado que define un conjunto de reglas para la codificación de documentos.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card ms-5 my-3" style="width: 18rem;">
-                    <img src="imagenes/SQLimagen.png" class="card-img-top rounded mx-auto d-block" alt="..."style="height: 186px; width: 180px;">
-                    <div class="card-body">
-                        <div class="progress" style="height: 5px;">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h5 class="card-title">SQL</h5>
-                        <p class="card-text">SQL es un lenguaje de cosnulta estructurado, esta diseñado para administrar, y recuperar información de sistemas de gestión de bases de datos relacionales.</p>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center mt-4">
-                <a href="https://github.com/swiker16" target="_blank"><img src="iconos/iconoGit.png"></a>
-                <a href="https://www.linkedin.com/in/iker-francos-216409196/" target="_blank"><img src="iconos/iconoLinkedin.png"></a>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mx-2">
-                    <p>Iker francos</p>
 
-                </div>
-            </div>
+      </div>
+    </section><!-- End About Section -->
+
+  
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
         </div>
-    </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Spring boot <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C# <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-5">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Microcomputer Systems and Networks Technician</h4>
+              <h5>2019 - 2021</h5>
+              <p><em>Colegio Santa María de los Apostoles, Madrid, Spain</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Senior Technician in Multiplatform Application Development</h4>
+              <h5>2021 - 2023</h5>
+              <p><em>Colegio Santa María de los Apostoles, Madrid, Spain</em></p>
+            </div>
+          </div>
+        
+          <div class="col-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Software Development Trainee</h4>
+              <h5>2023 May - Present</h5>
+              <p><em>Santander Digital Services, Madrid, Spain </em></p>
+              <ul>
+                <li>Create microservices in Spring Boot and Spring Darwin.</li>
+                <li>Communication of microservices with an event bus in Apache Kafka.</li>
+                <li>Do unit tests with Mockito, Junit and Mockito static.</li>
+                <li>Using the Apache JMeter to do load tests to analyse and measure the performance of microservices.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Computer Technician</h4>
+              <h5>2022 March - 2023 April</h5>
+              <p><em>SerMicro, Madrid, Spain</em></p>
+              <ul>
+                <li>Face-to-face technical support (weekends and holidays).</li>
+                <li>Resolve incidents with the ticketing service-now tool.</li>
+                <li>Equipment configuration for the user.</li>
+                <li>Check hardware.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
